@@ -61,7 +61,7 @@ const cookies: {name: string, description: string, img: string[], id: string}[] 
         img: ["//www.theblakery.co/cdn/shop/files/HauteDough-ture1_1024x1024.jpg?v=1718652320", "//www.theblakery.co/cdn/shop/files/HauteDough-ture2_1024x1024.jpg?v=1719420571", "//www.theblakery.co/cdn/shop/files/HauteDough-ture3_1024x1024.jpg?v=1714918563", "//www.theblakery.co/cdn/shop/files/hautedoughture_1024x1024.png?v=1718315520"],
         id: "haute-dough-ture"
     }, {
-        name: "MILF (Mouths in Love with Flavor)",
+        name: "MILF",
         description: "When you taste our classic vanilla base loaded with our custom blend of chocolate chips, trust us, you're gonna fall in love with this more mature cookie in ways that make you wonder if this kind of cookie relationship is appropriate.",
         img: ["//www.theblakery.co/cdn/shop/files/THEMILF1_1024x1024.jpg?v=1718652371", "//www.theblakery.co/cdn/shop/files/THEMILF2_1024x1024.jpg?v=1719420631", "//www.theblakery.co/cdn/shop/files/MILF_2e2fc7dc-dd26-46e3-a820-29579de2c6d1_1024x1024.png?v=1718315520"],
         id: "milf"

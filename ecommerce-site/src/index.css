@@ -11,4 +11,68 @@
 	body {
 		@apply bg-[#231F20] text-white;
 	}
+
+	h2 {
+		@apply uppercase;
+	}
+
+	li h4 {
+		@apply uppercase font-semibold text-lg;
+	}
+
+	li p {
+		@apply text-sm;
+	}
+
+	.cater-list li {
+		@apply flex gap-2;
+	}
+
+	.container {
+		@apply w-[90%] mx-auto my-0;
+	}
+
+	.shopping-box {
+		@apply w-full h-[35vh] text-center mb-5 flex flex-col justify-center border-2 border-white rounded-3xl bg-center bg-cover bg-blend-darken bg-black bg-opacity-50;
+	}
+
+	.shopping-box h2 {
+		@apply text-2xl font-semibold;
+	}
+
+	.btn-white-border {
+		@apply text-base border-2 rounded-md border-white w-[50%] min-w-[200px] max-w-[300px] py-2 my-4 uppercase;
+	}
+
+	.btn-white-fill {
+		@apply text-base border-2 rounded-md border-none w-full min-w-[200px] py-2 my-4 uppercase bg-white text-[#231F20] font-extrabold;
+	}
+
+	.learn-more-btn {
+		@apply underline tracking-widest;
+	}
+
+	.subTitle {
+		@apply tracking-[3px] uppercase text-base;
+	}
+
+	.cookie-name {
+		@apply text-3xl font-bold tracking-wider;
+	}
+
+	.cookie-description li {
+		@apply text-sm;
+	}
+
+	.form-input {
+		@apply w-full border-2 rounded-md border-[white] bg-[#231F20] p-2;
+	}
+
+	.prices {
+		@apply flex justify-between text-xl tracking-widest py-4;
+	}
+
+	.checkmark {
+		@apply text-xl;
+	}
 }

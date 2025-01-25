@@ -80,28 +80,30 @@ export default function Cookies() {
     } else if (cookieId === "fan-fave-6-pack") {
         return (
             <section className="cookie-info">
-            <div className="cookie-img">
-                <img className="w-[200px]" src={"//www.theblakery.co/cdn/shop/files/ezgif.com-animated-gif-maker_1040x1040.gif?v=1727973311"} alt="collection of cookies" />
-            </div>
-            <div className="info-text">
-                <h3>Fan Faves 6 Pack</h3>
-                <div className="review-stars">
-                    {/* put svg */}
+                <div className="container grid grid-rows-[min-content_1fr 1fr] gap-5">
+                    <div className="cookie-img">
+                        <img className="w-full" src={"//www.theblakery.co/cdn/shop/files/ezgif.com-animated-gif-maker_1040x1040.gif?v=1727973311"} alt="collection of cookies" />
+                    </div>
+                    <div className="info-text flex flex-col gap-3 row-start-1">
+                        <h3 className="cookie-name">Fan Faves 6 Pack</h3>
+                        <div className="review-stars">
+                            {/* put svg */}
+                        </div>
+                        <p className="text-sm">$53.00</p>
+                        <p className="text-sm">Includes 6 of our top selling flavors:</p>
+                        <ul className="cookie-description flex flex-col gap-3">
+                            <li><p>1️⃣ Slam Dunk'd (Dunkaroo)</p></li>
+                            <li><p>2️⃣ Let's Go Glamping (S'mores)</p></li>
+                            <li><p>3️⃣ Creamy Dream (Cookies 'N Cream)</p></li>
+                            <li><p>4️⃣ MILF (Chocolate Chip)</p></li>
+                            <li><p>5️⃣ Cookie Menage (Oreo Biscoff)</p></li>
+                            <li><p>6️⃣ The Candy Lover (KitKat, m&m, fudge brownie)</p></li>
+                        </ul>
+                    </div>
+                    <div className="price-btn">
+                        <button className="btn-white-fill">Add to Cart</button>
+                    </div>
                 </div>
-                <p>$53.00</p>
-                <p>Includes 6 of our top selling flavors:</p>
-                <ul>
-                    <li><p>1️⃣ Slam Dunk'd (Dunkaroo)</p></li>
-                    <li><p>2️⃣ Let's Go Glamping (S'mores)</p></li>
-                    <li><p>3️⃣ Creamy Dream (Cookies 'N Cream)</p></li>
-                    <li><p>4️⃣ MILF (Chocolate Chip)</p></li>
-                    <li><p>5️⃣ Cookie Menage (Oreo Biscoff)</p></li>
-                    <li><p>6️⃣ The Candy Lover (KitKat, m&m, fudge brownie)</p></li>
-                </ul>
-                <div className="price-btn">
-                    <button>Add to Cart</button>
-                </div>
-            </div>
             </section>
         )
     } else if (cookieId === "variety-pack") {
@@ -164,16 +166,20 @@ export default function Cookies() {
     } else {
         return (
             <section className="cookie-info">
-                <div className="cookie-img">
-                    <img className="w-[200px]" src={cookies.img[0]} alt={cookies.name} />
-                </div>
-                <div className="info-text">
-                    <h3>{cookies.name}</h3>
-                    <div className="review-stars">
-                        {/* put svg */}
+                <div className="container grid grid-rows-[min-content_1fr] gap-2">    
+                    <div className="cookie-img row-start-2">
+                        <img className="w-full" src={cookies.img[0]} alt={cookies.name} />
                     </div>
-                    <p>{cookies.description}</p>
-                    <button>Build a Box</button>
+                    <div className="info-text flex flex-col gap-3 mb-6">
+                        <h3 className="cookie-name">{cookies.name}</h3>
+                        <div className="review-stars">
+                            {/* put svg */}
+                        </div>
+                        <p className="cookie-description">{cookies.description}</p>
+                    </div>
+                    <div className="order-btn">
+                        <button className="btn-white-fill">Build a Box</button>
+                    </div>
                 </div>
             </section>
         )
