@@ -33,11 +33,11 @@
 	}
 
 	.shopping-box {
-		@apply w-full h-[35vh] text-center mb-5 flex flex-col justify-center border-2 border-white rounded-3xl bg-center bg-cover bg-blend-darken bg-black bg-opacity-50;
+		@apply w-full h-[35vh] lg:h-[50vh] text-center mb-5 lg:mb-0 flex flex-col justify-center border-2 border-white rounded-3xl bg-center bg-cover bg-blend-darken bg-black bg-opacity-50;
 	}
 
 	.shopping-box h2 {
-		@apply text-2xl font-semibold;
+		@apply text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-semibold;
 	}
 
 	.btn-white-border {
@@ -53,7 +53,7 @@
 	}
 
 	.subTitle {
-		@apply tracking-[3px] uppercase text-base;
+		@apply tracking-[3px] uppercase text-base lg:text-2xl;
 	}
 
 	.cookie-name {

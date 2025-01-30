@@ -9,7 +9,7 @@ function cookies() {
         return(
             <div className="cookie-name-cursor flex flex-col items-center">
                 <Stars />
-                <h2 className='cookie text-2xl my-3'>{cookie.name}</h2>
+                <h2 className='cookie text-2xl sm:text-5xl lg:text-6xl my-[0.4em]'>{cookie.name}</h2>
             </div>
         )
     })
@@ -21,22 +21,24 @@ export default function Home() {
             <main className='bg-[#231F20]'>
                 <section className="top-shopping-section mt-3">
                     <div className="container">
-                        <div className="desktop-version hidden">
-                            <div className="home-video">
-                                {/* put video here */}
+                        <div className="desktop-version hidden lg:grid grid-cols-2 gap-5 grid-rows-[min-content_min-content]">
+                            <div className="home-video row-span-2 row-start-1 h-[100vh]">
+                                <video className='border-2 border-white rounded-3xl w-full object-cover h-[100vh]' autoPlay muted>
+                                    <source src='https://cdn.shopify.com/videos/c/o/v/b87a1010fa3a40929e0debebbef48105.mp4'/>
+                                </video>
                             </div>
-                            <div className="shopping-box">
-                                <h3>All your favorites</h3>
+                            <div className="shopping-box bg-[#343434] h-full">
+                                <h3 className='subTitle'>All your favorites</h3>
                                 <h2>Build a Box</h2>
-                                <button>Shop Now</button>
+                                <button className='btn-white-border self-center'>Shop Now</button>
                             </div>
-                            <div className="shopping-box">
+                            <div className="shopping-box row-start-1 bg-[url('//www.theblakery.co/cdn/shop/files/mound_of_cookies.jpg?v=1714919481&width=3840')] h-full">
                                 <h2>Variety Pack</h2>
-                                <button>Add to Cart</button>
-                                <Link to={'/'}>Learn More</Link>
+                                <button className='btn-white-border self-center'>Add to Cart</button>
+                                <Link className='learn-more-btn' to={'/'}>Learn More</Link>
                             </div>
                         </div>
-                        <div className="mobile-version mb-10">
+                        <div className="mobile-version mb-10 lg:hidden">
                             <div className="main-banner-img border-2 border-white rounded-3xl h-[45vh] max-h-[380px]">
                                 <img className='border-white rounded-3xl max-h-[inherit] object-cover object-center' src="//www.theblakery.co/cdn/shop/files/The_Blakery_Dec_18.jpg?v=1732887156&width=3840" alt="christmas special" />
                             </div>
@@ -44,13 +46,13 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                <section className="cookie-display flex flex-col items-center justify-center">
-                    <h2 className='text-2xl text-center my-3'>Sleigh All Day Collection</h2>
+                <section className="cookie-display flex flex-col items-center justify-center my-[2.5em]">
+                    <h2 className='text-2xl text-center sm:text-5xl lg:text-6xl my-[0.4em]'>Sleigh All Day Collection</h2>
                     {cookies()}
                 </section>
                 <div className="infinite-scroll"></div>
                 <section className="middle-shopping-section">
-                    <div className="container">
+                    <div className="container lg:grid grid-rows-[min-content_min-content] grid-cols-2 gap-7">
                         <div className="shopping-box bg-[url('//www.theblakery.co/cdn/shop/files/TheBlakeryDec0.jpg?v=1732886819&width=3840')]">
                             <h2 className='w-[80%] my-0 mx-auto'>Sleigh All Day Collection</h2>
                             <Link to={'/cookie-catalogue/products/sleigh-all-day-collection'}><button className='btn-white-border'>Order Now</button></Link>
@@ -92,7 +94,7 @@ export default function Home() {
                     </div>
                 </section>
                 <section className="bottom-shopping-section">
-                    <div className="container">
+                    <div className="container lg:flex gap-7">
                         <div className="shopping-box bg-[url('//www.theblakery.co/cdn/shop/files/The_Blakery_Dec_36.jpg?v=1733000791&width=3840')]">
                             <h3 className='subTitle'>Cookie of the Month</h3>    
                             <h2>Velvet Crush</h2>
@@ -113,12 +115,12 @@ export default function Home() {
                     </div>
                 </section>
                 <section className="home-catering-section">
-                    <div className="desktop-catering hidden">
-                        <h3>Order The Blakery for your next event</h3>
-                        <h2>The Blackery Caters</h2>
-                        <button>Catering Menu</button>
+                    <div className="desktop-catering lg:block hidden text-center my-12">
+                        <h3 className='uppercase text-lg'>Order The Blakery for your next event</h3>
+                        <h2 className='text-6xl font-semibold my-4'>The Blackery Caters</h2>
+                        <Link to={'/catering'}><button className='btn-white-border'>Catering Menu</button></Link>
                     </div>
-                    <div className="mobile-catering text-center">
+                    <div className="mobile-catering lg:hidden text-center">
                         <h2 className='text-2xl font-semibold mb-2'>We Cater!</h2>
                         <p className='uppercase text-sm max-w-[60%] mx-auto my-0 tracking-wider'>Order The Blakery for your next event</p>
                         <Link to={'/catering'}><button className='btn-white-border'>Catering Menu</button></Link>
