@@ -5,7 +5,7 @@
 @layer components {
 	img,
 	svg {
-		@apply w-full h-full;
+		@apply w-full h-full object-cover;
 	}
 
 	body {
@@ -17,11 +17,11 @@
 	}
 
 	li h4 {
-		@apply uppercase font-semibold text-lg;
+		@apply uppercase font-semibold tracking-wide text-lg sm:text-2xl lg:text-xl;
 	}
 
 	li p {
-		@apply text-sm;
+		@apply text-sm sm:text-base lg:text-sm tracking-widest;
 	}
 
 	.cater-list li {
@@ -57,11 +57,15 @@
 	}
 
 	.cookie-name {
-		@apply text-3xl font-bold tracking-wider;
+		@apply text-4xl uppercase font-bold tracking-wider;
 	}
 
-	.cookie-description li {
-		@apply text-sm;
+	.cookie-description {
+		@apply tracking-widest sm:text-xl lg:text-base;
+	}
+
+	.cookie-description li p {
+		@apply text-sm sm:text-xl lg:text-base;
 	}
 
 	.form-input {
@@ -69,10 +73,54 @@
 	}
 
 	.prices {
-		@apply flex justify-between text-xl tracking-widest py-4;
+		@apply flex lg:flex-col justify-between text-xl sm:text-3xl lg:text-6xl tracking-widest py-4 lg:py-[0.8em] lg:px-[1.5em];
+	}
+
+	.price-amount {
+		@apply lg:text-sm text-center lg:bg-[#322F30] lg:p-1 rounded-lg;
 	}
 
 	.checkmark {
 		@apply text-xl;
+	}
+
+	.santa-dot {
+		@apply mt-[1em] font-bold sm:text-2xl lg:text-base;
+	}
+
+	.sleigh-desc {
+		@apply my-[1em] tracking-widest sm:text-2xl lg:text-base;
+	}
+
+	.slider {
+		@apply w-full flex align-middle relative overflow-hidden [mask-image:linear-gradient(to_right,transparent_0,black_15%,black_50%,black_85%,transparent_100%)] z-0;
+	}
+
+	.list {
+		@apply flex w-[calc(175px*10*2)] gap-[calc(175px/6)] sm:w-[calc(230px*10*2)] sm:gap-[calc(230px/6)] lg:w-[calc(500px*10*2)] lg:gap-[calc(500px/6)] hover:[animation-play-state:paused] mb-4;
+	}
+
+	.list-2 {
+		@apply flex w-[calc(450px*8*2)] gap-[calc(450px/14)] hover:[animation-play-state:paused];
+	}
+
+	.item {
+		@apply w-[175px] h-[175px] sm:w-[230px] sm:h-[230px] lg:w-[500px] lg:h-[500px];
+	}
+
+	.item img {
+		@apply rounded-lg;
+	}
+
+	.item-2 {
+		@apply w-[360px] lg:w-[480px] h-[50px] flex justify-between items-center;
+	}
+
+	.item-2 p {
+		@apply text-xl lg:text-[1.75rem] tracking-widest;
+	}
+
+	.item-2 svg {
+		@apply w-[auto] h-[25px];
 	}
 }

@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom'
 
 export default function Navbar() {
     return(
-        <header className='sticky top-0 bg-[#231F20] py-4'>
+        <header className='sticky top-0 bg-[#231F20] py-4 z-10'>
             <nav>
                 <div className="navbar flex justify-between mx-4">
                     <div className="ham-menu w-[15%] max-w-[45px]">

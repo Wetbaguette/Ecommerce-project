@@ -5,8 +5,8 @@ import Stars from './Stars'
 export default function Footer() {
     return(
         <footer>
-            <div className="footer-container w-[92%] lg:w-[98%] mx-auto my-0 lg:my-5 bg-[#322F30] rounded-md lg:flex lg:py-[5rem] justify-between">
-                <div className="footer-logo py-5 mx-auto my-0 w-[90%] lg:w-[30%] flex flex-col text-center gap-1">
+            <div className="footer-container w-[92%] lg:w-[98%] mx-auto my-0 lg:my-5 bg-[#322F30] rounded-md lg:flex lg:py-[5rem] lg:px-[12rem] justify-center">
+                <div className="footer-logo py-5 mx-auto my-0 w-[90%] lg:w-[30%] flex flex-col text-center gap-1 self-center">
                     <div>
                         <svg className='max-w-[300px] mx-auto my-0' 
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153 73" fill="none">
@@ -22,7 +22,7 @@ export default function Footer() {
                     <p>Maison de Cookie</p>
                     <Stars />
                 </div>
-                <ul className="footer-links text-center lg:text-left flex flex-col gap-1 text-sm lg:text-base font-semibold lg:font-normal mb-5 lg:mb-0 tracking-widest justify-between">
+                <ul className="footer-links text-center lg:text-left flex flex-col gap-1 lg:gap-3 text-sm lg:text-xl font-semibold lg:font-normal mb-5 lg:mb-0 tracking-widest justify-between">
                     <li><Link to={"/build-a-box"}>Build a Box</Link></li>
                     <li><Link to={"/gift-cards"}>Gift Cards</Link></li>
                     <li><Link to={"/our-story"}>Our Story</Link></li>

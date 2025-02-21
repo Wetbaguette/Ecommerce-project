@@ -2,6 +2,7 @@ import {Link} from 'react-router-dom'
 import cookieData from '../cookieData.tsx'
 import Stars from '../components/Stars.tsx'
 import Footer from '../components/Footer.tsx'
+import CookieScroll from '../components/CookieScroll.tsx'
 
 function cookies() {
     const cookiesData = cookieData
@@ -127,6 +128,7 @@ export default function Home() {
                     </div>
                 </section>
             </main>
+            <CookieScroll />
             <Footer />
         </>
     )

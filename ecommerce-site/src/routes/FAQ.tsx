@@ -1,3 +1,5 @@
+import Footer from "../components/Footer"
+import CookieScroll from "../components/CookieScroll"
 
 const faq: {question: string, answer: string}[] = [
     {
@@ -65,10 +67,10 @@ function questions() {
         return (
             <div>
                 <div className="question">
-                    <h4 className="font-semibold tracking-widest my-4">{item.question}</h4>
+                    <h4 className="font-semibold tracking-widest my-4 lg:text-2xl">{item.question}</h4>
                     {/* svg */}
                 </div>
-                <p className="tracking-widest text-sm my-4">{item.answer}</p>
+                <p className="tracking-widest text-sm my-4 lg:text-lg">{item.answer}</p>
                 <hr />
             </div>
         )
@@ -79,13 +81,15 @@ export default function FAQ() {
     return (
         <>
             <section className="faq">
-                <div className="title bg-[linear-gradient(to_bottom,rgba(0,0,0,0),rgba(35,31,32,1)),url('//www.theblakery.co/cdn/shop/files/blakery-pattern_1024x.svg?v=1714500231')] text-3xl text-center font-bold [word-spacing:20px] tracking-wider py-[2em] px-[0.5em] bg-no-repeat bg-cover bg-center from-black">
-                    <h2>Frequently Asked Questions</h2>
+                <div className="title bg-[linear-gradient(to_bottom,rgba(0,0,0,0),rgba(35,31,32,1)),url('//www.theblakery.co/cdn/shop/files/blakery-pattern_1024x.svg?v=1714500231')] text-3xl text-center font-bold [word-spacing:20px] tracking-wider py-[2em] lg:py-[4em] px-[0.5em] bg-no-repeat bg-cover bg-center from-black">
+                    <h2 className="lg:text-6xl">Frequently Asked Questions</h2>
                 </div>
-                <div className="questions-answers container">
+                <div className="questions-answers container lg:my-[3rem]">
                     {questions()}
                 </div>
             </section>
+            <CookieScroll />
+            <Footer />
         </>
     )
 }
