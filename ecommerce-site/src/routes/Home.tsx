@@ -51,7 +51,70 @@ export default function Home() {
                     <h2 className='text-2xl text-center sm:text-5xl lg:text-6xl my-[0.4em]'>Sleigh All Day Collection</h2>
                     {cookies()}
                 </section>
-                <div className="infinite-scroll"></div>
+                <div className="slider bg-[#343434] py-2 mb-8 ">
+                    <div className="list-2 animate-autoScroll w-[calc(750px*8*2)]">
+                        <div className="item-2 w-[750px]">
+                            <p>AS SEEN ON GORDON RAMSAY'S FOOD STARS</p>
+                            <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M25 12.9148C16.521 12.3539 13.1212 8.81813 12.5819 0H12.4181C11.8788 8.81813 8.47897 12.3539 0 12.9148V13.0852C8.47897 13.6461 11.8856 17.1819 12.4181 26H12.5819C13.1212 17.1819 16.521 13.6461 25 13.0852V12.9148Z" fill="white"></path>
+                            </svg>
+                        </div>
+                        <div className="item-2 w-[750px]">
+                            <p>AS SEEN ON GORDON RAMSAY'S FOOD STARS</p>
+                            <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M25 12.9148C16.521 12.3539 13.1212 8.81813 12.5819 0H12.4181C11.8788 8.81813 8.47897 12.3539 0 12.9148V13.0852C8.47897 13.6461 11.8856 17.1819 12.4181 26H12.5819C13.1212 17.1819 16.521 13.6461 25 13.0852V12.9148Z" fill="white"></path>
+                            </svg>
+                        </div>
+                        <div className="item-2 w-[750px]">
+                            <p>AS SEEN ON GORDON RAMSAY'S FOOD STARS</p>
+                            <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M25 12.9148C16.521 12.3539 13.1212 8.81813 12.5819 0H12.4181C11.8788 8.81813 8.47897 12.3539 0 12.9148V13.0852C8.47897 13.6461 11.8856 17.1819 12.4181 26H12.5819C13.1212 17.1819 16.521 13.6461 25 13.0852V12.9148Z" fill="white"></path>
+                            </svg>
+                        </div>
+                        <div className="item-2 w-[750px]">
+                            <p>AS SEEN ON GORDON RAMSAY'S FOOD STARS</p>
+                            <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M25 12.9148C16.521 12.3539 13.1212 8.81813 12.5819 0H12.4181C11.8788 8.81813 8.47897 12.3539 0 12.9148V13.0852C8.47897 13.6461 11.8856 17.1819 12.4181 26H12.5819C13.1212 17.1819 16.521 13.6461 25 13.0852V12.9148Z" fill="white"></path>
+                            </svg>
+                        </div>
+                        <div className="item-2 w-[750px]">
+                            <p>AS SEEN ON GORDON RAMSAY'S FOOD STARS</p>
+                            <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M25 12.9148C16.521 12.3539 13.1212 8.81813 12.5819 0H12.4181C11.8788 8.81813 8.47897 12.3539 0 12.9148V13.0852C8.47897 13.6461 11.8856 17.1819 12.4181 26H12.5819C13.1212 17.1819 16.521 13.6461 25 13.0852V12.9148Z" fill="white"></path>
+                            </svg>
+                        </div>
+                        <div className="item-2 w-[750px]">
+                            <p>AS SEEN ON GORDON RAMSAY'S FOOD STARS</p>
+                            <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M25 12.9148C16.521 12.3539 13.1212 8.81813 12.5819 0H12.4181C11.8788 8.81813 8.47897 12.3539 0 12.9148V13.0852C8.47897 13.6461 11.8856 17.1819 12.4181 26H12.5819C13.1212 17.1819 16.521 13.6461 25 13.0852V12.9148Z" fill="white"></path>
+                            </svg>
+                        </div>
+                        <div className="item-2 w-[750px]">
+                            <p>AS SEEN ON GORDON RAMSAY'S FOOD STARS</p>
+                            <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M25 12.9148C16.521 12.3539 13.1212 8.81813 12.5819 0H12.4181C11.8788 8.81813 8.47897 12.3539 0 12.9148V13.0852C8.47897 13.6461 11.8856 17.1819 12.4181 26H12.5819C13.1212 17.1819 16.521 13.6461 25 13.0852V12.9148Z" fill="white"></path>
+                            </svg>
+                        </div>
+                        <div className="item-2 w-[750px]">
+                            <p>AS SEEN ON GORDON RAMSAY'S FOOD STARS</p>
+                            <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M25 12.9148C16.521 12.3539 13.1212 8.81813 12.5819 0H12.4181C11.8788 8.81813 8.47897 12.3539 0 12.9148V13.0852C8.47897 13.6461 11.8856 17.1819 12.4181 26H12.5819C13.1212 17.1819 16.521 13.6461 25 13.0852V12.9148Z" fill="white"></path>
+                            </svg>
+                        </div>
+                        <div className="item-2 w-[750px]">
+                            <p>AS SEEN ON GORDON RAMSAY'S FOOD STARS</p>
+                            <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M25 12.9148C16.521 12.3539 13.1212 8.81813 12.5819 0H12.4181C11.8788 8.81813 8.47897 12.3539 0 12.9148V13.0852C8.47897 13.6461 11.8856 17.1819 12.4181 26H12.5819C13.1212 17.1819 16.521 13.6461 25 13.0852V12.9148Z" fill="white"></path>
+                            </svg>
+                        </div>
+                        <div className="item-2 w-[750px]">
+                            <p>AS SEEN ON GORDON RAMSAY'S FOOD STARS</p>
+                            <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M25 12.9148C16.521 12.3539 13.1212 8.81813 12.5819 0H12.4181C11.8788 8.81813 8.47897 12.3539 0 12.9148V13.0852C8.47897 13.6461 11.8856 17.1819 12.4181 26H12.5819C13.1212 17.1819 16.521 13.6461 25 13.0852V12.9148Z" fill="white"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
                 <section className="middle-shopping-section">
                     <div className="container lg:grid grid-rows-[min-content_min-content] grid-cols-2 gap-7">
                         <div className="shopping-box bg-[url('//www.theblakery.co/cdn/shop/files/TheBlakeryDec0.jpg?v=1732886819&width=3840')]">
@@ -89,9 +152,82 @@ export default function Home() {
                         {/* add img */}
                     </div>
                 </section>
-                <section className="article-review-scroll">
-                    <div className="scroll-box">
-                        {/* add logos */}
+                <section className="article-review-scroll container">
+                    <div className="slider-2">
+                        <div className="list-3 animate-specialScroll">
+                            <div className="item-3">
+                                <img src="//www.theblakery.co/cdn/shop/files/2a2be16896446ee290ee032debffe25f_c5_720x720_1_1024x1024.png?v=1713460947" alt="image of respective business" />
+                            </div>
+                            <div className="item-3">
+                                <img src="//www.theblakery.co/cdn/shop/files/2a2be16896446ee290ee032debffe25f_c5_720x720_2_1024x1024.png?v=1713460947" alt="image of respective business" />
+                            </div>
+                            <div className="item-3">
+                                <img src="//www.theblakery.co/cdn/shop/files/ISF_1024x1024.png?v=1717780438" alt="image of respective business" />
+                            </div>
+                            <div className="item-3">
+                                <img src="//www.theblakery.co/cdn/shop/files/modern-luxury-miami_1024x1024.png?v=1713460947" alt="image of respective business" />
+                            </div>
+                            <div className="item-3">
+                                <img src="//www.theblakery.co/cdn/shop/files/2a2be16896446ee290ee032debffe25f_c5_720x720_5_1024x1024.png?v=1713460948" alt="image of respective business" />
+                            </div>
+                            <div className="item-3">
+                                <img src="//www.theblakery.co/cdn/shop/files/nbc6_1024x1024.png?v=1716390600" alt="image of respective business" />
+                            </div>
+                            <div className="item-3">
+                                <img src="//www.theblakery.co/cdn/shop/files/newtimes_1024x1024.png?v=1716417992" alt="image of respective business" />
+                            </div>
+                            <div className="item-3">
+                                <img src="//www.theblakery.co/cdn/shop/files/foostars_1024x1024.png?v=1716428536" alt="image of respective business" />
+                            </div>
+                            <div className="item-3">
+                                <img src="//www.theblakery.co/cdn/shop/files/lifestyle_1024x1024.png?v=1717121563" alt="image of respective business" />
+                            </div>
+                            <div className="item-3">
+                                <img src="//www.theblakery.co/cdn/shop/files/ISF_1024x1024.png?v=1717780438" alt="image of respective business" />
+                            </div>
+                            <div className="item-3">
+                                <img src="//www.theblakery.co/cdn/shop/files/Untitled-2_copy_1024x1024.png?v=1718993646" alt="image of respective business" />
+                            </div>
+                            <div className="item-3">
+                                <img src="//www.theblakery.co/cdn/shop/files/brickellmag_1024x1024.png?v=1719783283" alt="image of respective business" />
+                            </div>
+                            <div className="item-3">
+                                <img src="//www.theblakery.co/cdn/shop/files/2a2be16896446ee290ee032debffe25f_c5_720x720_1_1024x1024.png?v=1713460947" alt="image of respective business" />
+                            </div>
+                            <div className="item-3">
+                                <img src="//www.theblakery.co/cdn/shop/files/2a2be16896446ee290ee032debffe25f_c5_720x720_2_1024x1024.png?v=1713460947" alt="image of respective business" />
+                            </div>
+                            <div className="item-3">
+                                <img src="//www.theblakery.co/cdn/shop/files/ISF_1024x1024.png?v=1717780438" alt="image of respective business" />
+                            </div>
+                            <div className="item-3">
+                                <img src="//www.theblakery.co/cdn/shop/files/modern-luxury-miami_1024x1024.png?v=1713460947" alt="image of respective business" />
+                            </div>
+                            <div className="item-3">
+                                <img src="//www.theblakery.co/cdn/shop/files/2a2be16896446ee290ee032debffe25f_c5_720x720_5_1024x1024.png?v=1713460948" alt="image of respective business" />
+                            </div>
+                            <div className="item-3">
+                                <img src="//www.theblakery.co/cdn/shop/files/nbc6_1024x1024.png?v=1716390600" alt="image of respective business" />
+                            </div>
+                            <div className="item-3">
+                                <img src="//www.theblakery.co/cdn/shop/files/newtimes_1024x1024.png?v=1716417992" alt="image of respective business" />
+                            </div>
+                            <div className="item-3">
+                                <img src="//www.theblakery.co/cdn/shop/files/foostars_1024x1024.png?v=1716428536" alt="image of respective business" />
+                            </div>
+                            <div className="item-3">
+                                <img src="//www.theblakery.co/cdn/shop/files/lifestyle_1024x1024.png?v=1717121563" alt="image of respective business" />
+                            </div>
+                            <div className="item-3">
+                                <img src="//www.theblakery.co/cdn/shop/files/ISF_1024x1024.png?v=1717780438" alt="image of respective business" />
+                            </div>
+                            <div className="item-3">
+                                <img src="//www.theblakery.co/cdn/shop/files/Untitled-2_copy_1024x1024.png?v=1718993646" alt="image of respective business" />
+                            </div>
+                            <div className="item-3">
+                                <img src="//www.theblakery.co/cdn/shop/files/brickellmag_1024x1024.png?v=1719783283" alt="image of respective business" />
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section className="bottom-shopping-section">
